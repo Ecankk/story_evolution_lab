@@ -33,3 +33,6 @@ code/media-backend/data/stories/*.pkl
 
 # Experimental / Old
 .agent/
+
+# Docs & Materials (local only)
+materials/
