@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.env
+.venv/
+venv/
+
+# Node / Vue
+node_modules/
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data & Logs
+*.log
+*.pkl
+*.npy
+code/media-backend/data/*.json
+code/media-backend/data/*.pkl
+code/media-backend/data/stories/*.json
+code/media-backend/data/stories/*.pkl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Experimental / Old
+.agent/

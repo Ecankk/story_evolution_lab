@@ -1,0 +1,105 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+/* semantic color variables for this project (Nebula Theme) */
+:root {
+  /* Deep Space Gradient Background */
+  --color-background-start: #0f0c29;
+  --color-background-mid: #302b63;
+  --color-background-end: #24243e;
+  --color-background: var(--color-background-start);
+  /* Fallback */
+
+  /* Glass Surface */
+  --glass-surface: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-highlight: rgba(255, 255, 255, 0.08);
+  --glass-blur: 16px;
+
+  /* Typography */
+  --color-text-primary: #e2e8f0;
+  /* Slate-200 */
+  --color-text-secondary: #94a3b8;
+  /* Slate-400 */
+  --color-text-muted: #64748b;
+  /* Slate-500 */
+
+  /* Accents (Warmth) */
+  --color-accent-primary: #f6d365;
+  /* Gold */
+  --color-accent-secondary: #fda085;
+  /* Sunset Orange */
+  --color-accent-glow: rgba(246, 211, 101, 0.3);
+
+  /* Functional */
+  --color-border: var(--glass-border);
+  --color-border-hover: var(--glass-highlight);
+  --color-heading: var(--color-text-primary);
+  --color-text: var(--color-text-secondary);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Auto-dark mode fallback if needed, but Nebula is dark by default */
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: linear-gradient(to bottom, var(--color-background-start), var(--color-background-mid), var(--color-background-end));
+  background-attachment: fixed;
+  /* Parallax feel */
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
